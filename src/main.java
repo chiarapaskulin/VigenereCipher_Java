@@ -169,7 +169,7 @@ public class main {
         String key = "";
 
         for (int i=0; i<keySize; i++){
-            // Calculates letters frequency of the text for every key size [1,20]
+            // Calculates letters frequency of the text for every key size [1,keySize]
             StringBuffer subFile = buildSubFile(fileData, i, keySize);
             LettersFrequency lf = calculateLettersFrequency(subFile);
 
@@ -201,7 +201,7 @@ public class main {
     }
 
     public static StringBuffer buildSubFile(StringBuffer originalFile, int start, int keySize){
-        // Builds a subFile of originalFile starting at i and incrementing keySize
+        // Builds a subFile of originalFile starting at start and incrementing keySize
         StringBuffer subFile = new StringBuffer();
         int fileLenght = originalFile.length();
         int i = start;
