@@ -1,1 +1,2 @@
-# Freq_IC
+# Vigenère Cipher
+Encryption and decryption
